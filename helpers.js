@@ -7,7 +7,8 @@ const markdown = require('markdown-it')({
         return hljs.highlight('javascript', code).value;
 
     },
-    'html': true
+    'html': true,
+    'linkify': true
 });
 
 Handlebars.registerHelper('highlightBlock', block => {
