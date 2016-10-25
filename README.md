@@ -14,5 +14,5 @@ $ npm install doxdox doxdox-plugin-bootstrap --save-dev
 ## Usage
 
 ```bash
-$ doxdox lib/ --layout bootstrap --output DOCUMENTATION.html
+$ doxdox 'src/**/*.js' --layout bootstrap --output docs/index.html
 ```
