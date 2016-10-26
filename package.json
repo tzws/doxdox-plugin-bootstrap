@@ -14,7 +14,7 @@
     "eslint": "3.8.1"
   },
   "peerDependencies": {
-    "doxdox": "^1.0.x"
+    "doxdox": "^1.1.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
