@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1">
+<title>doxdox-plugin-bootstrap &#8212; Bootstrap template plugin for doxdox.</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/github.min.css">
+<style>
+
+.jumbotron {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #2B303E;
+    -webkit-font-smoothing: antialiased;
+}
+
+.jumbotron h1 {
+    font-size: 3.5rem;
+    line-height: 1;
+}
+
+.jumbotron h1,
+.jumbotron h1 a {
+    color: #eee;
+}
+
+.jumbotron small {
+    font-weight: 200;
+    color: #777;
+}
+
+.jumbotron p {
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 1.2;
+    color: #ccc;
+}
+
+.wrap {
+    padding: 2rem 1rem;
+}
+
+.menu {
+    padding: 0;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li ul {
+    padding: 0;
+}
+
+.menu li a {
+    display: block;
+    padding: .25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu .file {
+    color: #E54D89;
+}
+
+.menu .scope-private a {
+    color: #8BAAC6;
+}
+
+.permalink {
+    position: absolute;
+    margin-left: -.75em;
+    font-weight: normal;
+    color: #eee;
+    text-decoration: none;
+}
+
+.permalink:hover {
+    color: #E54D89;
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    padding: .5rem .6rem;
+    line-height: 1;
+    background: #fff;
+    z-index: 999;
+}
+
+.back-to-top.visible {
+    display: block;
+}
+
+.back-to-top svg {
+    vertical-align: middle;
+}
+
+.bs-footer {
+    margin: 3rem auto;
+    color: #777;
+    text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+
+<a href="#" class="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" width="13px" height="14px" viewBox="0 0 13 14"><path d="M7.18761156,13 L7.18761156,5.49249703 L10.4587853,5.49249703 L5.09931763,0.113558129 L-0.26015,5.49249703 L3.01102371,5.49249703 L3.01102371,13 L7.18761156,13 Z" fill="#428bca"></path></svg> Back to Top</a>
+
+<div class="jumbotron">
+
+    <div class="container">
+
+        <h1>
+                <a href="https://github.com/neogeek/doxdox-plugin-bootstrap">doxdox-plugin-bootstrap</a>
+            <small>1.0.3</small>
+        </h1>
+
+        <p>Bootstrap template plugin for doxdox.</p>
+
+    </div>
+
+</div>
+
+<div class="wrap">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3 hidden-sm hidden-xs">
+
+                <ul class="menu">
+
+
+                    <li>
+                        <a href="#index.js" class="file"><b>index.js</b></a>
+                        <ul>
+
+
+                        <li class="scope-public">
+                            <a href="#index.js-plugin" title="plugin">plugin</a>
+                        </li>
+
+
+                        </ul>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+            <div class="col-md-9">
+
+
+                <a id="index.js" />
+
+
+                    <div class="method scope-public">
+
+                        <h2 id="index.js-plugin">
+                            <a href="#index.js-plugin" class="permalink">#</a> plugin(data)
+                        </h2>
+
+                        <p>Boostrap template plugin for doxdox.</p>
+
+
+                        
+
+
+                        <section class="parameters">
+
+                            <h3>Parameters</h3>
+
+
+                                <p>
+                                    <b>data</b>
+                                        <code>Array</code>
+                                </p>
+
+                                <p>Methods parsed using a doxdox parser.</p>
+
+
+
+                        </section>
+
+
+
+
+                        <section class="examples">
+
+                            <h3>Examples</h3>
+
+
+                                <pre><code class="hljs javascript">parseInputs(inputs, {<span class="hljs-string">'parser'</span>: <span class="hljs-string">'dox'</span>, <span class="hljs-string">'layout'</span>: <span class="hljs-string">'bootstrap'</span>}).then(<span class="hljs-function"><span class="hljs-params">content</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(content));</code></pre>
+
+
+                        </section>
+
+
+                        <section class="returns">
+
+                            <h3>Returns</h3>
+
+
+
+                                    <p>
+                                            <code>Promise</code>
+                                    </p>
+
+                                    <p>Promise with generated content.</p>
+
+
+
+
+                        </section>
+
+                    </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="bs-footer">
+
+    <div class="container">
+
+        <p>Documentation generated with <a href="https://github.com/neogeek/doxdox">doxdox</a>.</p>
+
+    </div>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+<script>
+
+(function () {
+
+    'use strict';
+
+    var headerHeight = $('.jumbotron').outerHeight(true),
+        $backToTop = $('.back-to-top');
+
+    function handleScrollEvent() {
+
+        if (window.scrollY > headerHeight && $backToTop.not('.visible')) {
+
+            $backToTop.addClass('visible');
+
+        } else if (window.scrollY < headerHeight && $backToTop.is('.visible')) {
+
+            $backToTop.removeClass('visible');
+
+        }
+
+    }
+
+    $('pre code:not(.hljs)').each(function () {
+        hljs.highlightBlock(this);
+    });
+
+    $(window).on('scroll', handleScrollEvent);
+
+    handleScrollEvent();
+
+})();
+
+</script>
+
+</body>
+</html>
