@@ -1,4 +1,8 @@
+BIN=node_modules/.bin
+
 test:
+	$(BIN)/eslint index.js
+	$(BIN)/eslint helpers.js
 	doxdox index.js --layout index.js | diff test/fixtures/documentation.html -
 
 fixtures:
