@@ -6,8 +6,8 @@
   "license": "MIT",
   "dependencies": {
     "handlebars": "4.0.5",
-    "highlight.js": "9.7.0",
-    "markdown-it": "8.0.1"
+    "highlight.js": "9.8.0",
+    "markdown-it": "8.1.0"
   },
   "devDependencies": {
     "@neogeek/eslint-config-standards": "1.7.0",
