@@ -3,6 +3,9 @@
   "description": "Bootstrap template plugin for doxdox.",
   "version": "1.0.3",
   "main": "index.js",
+  "engines": {
+    "node": ">=4.0"
+  },
   "license": "MIT",
   "dependencies": {
     "handlebars": "4.0.5",
