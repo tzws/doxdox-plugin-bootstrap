@@ -10,11 +10,11 @@
   "dependencies": {
     "handlebars": "4.0.6",
     "highlight.js": "9.8.0",
-    "markdown-it": "8.1.0"
+    "markdown-it": "8.2.1"
   },
   "devDependencies": {
-    "@neogeek/eslint-config-standards": "1.8.0",
-    "eslint": "3.10.2"
+    "@neogeek/eslint-config-standards": "1.9.0",
+    "eslint": "3.11.1"
   },
   "peerDependencies": {
     "doxdox": "~1.1.3"
