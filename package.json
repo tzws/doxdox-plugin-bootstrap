@@ -1,7 +1,7 @@
 {
   "name": "doxdox-plugin-bootstrap",
   "description": "Bootstrap template plugin for doxdox.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "engines": {
     "node": ">=4.0"
