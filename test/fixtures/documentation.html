@@ -64,13 +64,48 @@
     color: #E54D89;
 }
 
+.menu .file + ul {
+    margin: 0 0 1rem 0;
+}
+
 .menu .scope-private a {
     color: #8BAAC6;
 }
 
+.method {
+    margin: 0 0 4rem 0;
+}
+
+.method .method-name {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.method .method-name + .scope-private {
+    color: #AAAAAA;
+}
+
+.method section {
+    margin: 2rem 0;
+}
+
+.method h3 {
+    margin: 0 0 1rem 0;
+}
+
+.method .table,
+.method .table p,
+.method .table ol,
+.method .table ul {
+    margin: 0;
+}
+
 .permalink {
     position: absolute;
-    margin-left: -.75em;
+    margin-left: -1em;
     font-weight: normal;
     color: #eee;
     text-decoration: none;
@@ -118,7 +153,7 @@
 
         <h1>
                 <a href="https://github.com/neogeek/doxdox-plugin-bootstrap">doxdox-plugin-bootstrap</a>
-            <small>1.0.3</small>
+            <small>1.0.4</small>
         </h1>
 
         <p>Bootstrap template plugin for doxdox.</p>
@@ -166,28 +201,49 @@
                     <div class="method scope-public">
 
                         <h2 id="index.js-plugin">
-                            <a href="#index.js-plugin" class="permalink">#</a> plugin(data)
+                            <a href="#index.js-plugin" class="permalink">#</a>
+                            <span class="method-name" title="plugin(data)">plugin(data)</span>
                         </h2>
 
-                        <p>Boostrap template plugin for doxdox.</p>
+                        <div class="description lead">
+
+                            <p>Boostrap template plugin for doxdox.</p>
 
 
-                        
+                        </div>
 
 
                         <section class="parameters">
 
                             <h3>Parameters</h3>
 
+                            <div class="table-responsive">
+                                <table class="table">
 
-                                <p>
-                                    <b>data</b>
-                                        <code>Array</code>
-                                </p>
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
 
-                                <p>Methods parsed using a doxdox parser.</p>
+                                    <tbody>
+                                    <tr>
+                                        <td>data</td>
+                                        <td>
+                                            <code>Array</code>
+                                        </td>
+                                        <td><p>Methods parsed using a doxdox parser.</p>
+</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    </tbody>
 
-
+                                </table>
+                            </div>
 
                         </section>
 
