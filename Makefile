@@ -1,9 +1,13 @@
 BIN=node_modules/.bin
 
 test:
+	make lint
+	doxdox index.js --layout markdown | diff DOCUMENTATION.md -
+	doxdox index.js --layout index.js | diff test/fixtures/documentation.html -
+
+lint:
 	$(BIN)/eslint index.js
 	$(BIN)/eslint helpers.js
-	doxdox index.js --layout index.js | diff test/fixtures/documentation.html -
 
 fixtures:
 	doxdox index.js --layout index.js --output test/fixtures/documentation.html
