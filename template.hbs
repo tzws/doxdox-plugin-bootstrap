@@ -3,7 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1">
-<title>{{title}}{{#if description}} &#8212; {{description}}{{/if}}</title>
+<title>{{title}}{{#if pkg.version}} {{pkg.version}}{{/if}}{{#if description}} &#8212; {{description}}{{/if}}</title>
+{{#if description}}
+<meta name="description" content="{{description}}">
+{{/if}}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/github.min.css">
 <style>
