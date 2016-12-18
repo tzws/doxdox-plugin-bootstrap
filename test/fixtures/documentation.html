@@ -42,6 +42,11 @@
     padding: 2rem 1rem;
 }
 
+.search {
+    margin: 0 0 1rem 0;
+    width: 90%;
+}
+
 .menu {
     padding: 0;
 }
@@ -171,6 +176,8 @@
 
             <div class="col-md-3 hidden-sm hidden-xs">
 
+                <input type="text" class="form-control search" id="search-methods" placeholder="Search..." autocomplete="off">
+
                 <ul class="menu">
 
 
@@ -179,7 +186,7 @@
                         <ul>
 
 
-                        <li class="scope-public">
+                        <li class="method-link scope-public">
                             <a href="#index.js-plugin" title="plugin">plugin</a>
                         </li>
 
@@ -328,6 +335,30 @@
 
     $('pre code:not(.hljs)').each(function () {
         hljs.highlightBlock(this);
+    });
+
+    var $methodLinks = $('.method-link');
+
+    $('#search-methods').on('keyup', function (e) {
+
+        var query = new RegExp(e.target.value.replace(' ', '|'), 'ig');
+
+        $methodLinks.each(function () {
+
+            var $this = $(this);
+
+            if (!$this.text().match(query)) {
+
+                $this.hide();
+
+            } else {
+
+                $this.show();
+
+            }
+
+        });
+
     });
 
     $(window).on('scroll', handleScrollEvent);
