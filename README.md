@@ -1,5 +1,7 @@
 # doxdox-plugin-bootstrap
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/neogeek/doxdox-plugin-bootstrap.svg)](https://greenkeeper.io/)
+
 > Bootstrap template plugin for doxdox.
 
 [![Build Status](https://travis-ci.org/neogeek/doxdox-plugin-bootstrap.svg?branch=master)](https://travis-ci.org/neogeek/doxdox-plugin-bootstrap)
