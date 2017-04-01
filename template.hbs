@@ -11,6 +11,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/github.min.css">
 <style>
 
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: searchfield-cancel-button;
+}
+
 .jumbotron {
     margin-bottom: 0;
     border-radius: 0;
@@ -182,7 +186,7 @@
 
             <div class="col-md-3 hidden-sm hidden-xs">
 
-                <input type="text" class="form-control search" id="search-methods" placeholder="Search..." autocomplete="off">
+                <input type="search" class="form-control search" id="search-methods" placeholder="Search..." autocomplete="off">
 
                 <ul class="menu">
 
@@ -417,9 +421,13 @@
         hljs.highlightBlock(this);
     });
 
+    var $searchInput = $('#search-methods');
     var $methodLinks = $('.method-link');
+    var $methodNames = $('.method .method-name');
 
-    $('#search-methods').on('keyup', function (e) {
+    var urlQuery = window.location.search.match(/q=([^&]+)/);
+
+    $searchInput.on('keyup', function (e) {
 
         var query = new RegExp(e.target.value.replace(' ', '|'), 'ig');
 
@@ -439,7 +447,37 @@
 
         });
 
+        $methodNames.each(function () {
+
+            var $this = $(this);
+
+            if (!$this.text().match(query)) {
+
+                $this.closest('.method').hide();
+
+            } else {
+
+                $this.closest('.method').show();
+
+            }
+
+        });
+
+        window.history.replaceState({}, '', window.location.pathname + '?q=' + e.target.value);
+
     });
+
+    $searchInput.on('search', function () {
+
+        $searchInput.trigger('keyup');
+
+    });
+
+    if (urlQuery && urlQuery.length > 1) {
+
+        $searchInput.val(urlQuery[1]).trigger('keyup');
+
+    }
 
     $(window).on('scroll', handleScrollEvent);
 
