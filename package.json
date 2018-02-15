@@ -10,7 +10,7 @@
   "dependencies": {
     "handlebars": "4.0.11",
     "highlight.js": "9.12.0",
-    "markdown-it": "8.4.0"
+    "markdown-it": "8.4.1"
   },
   "devDependencies": {
     "@neogeek/eslint-config-standards": "^2.0.0",
