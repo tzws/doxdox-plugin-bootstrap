@@ -282,50 +282,6 @@ input[type="search"]::-webkit-search-cancel-button {
 
                         {{/if}}
 
-                        {{#if tags.property.length}}
-
-                        <section class="property">
-
-                            <h3>Properties</h3>
-
-                            <div class="table-responsive">
-                                <table class="table">
-
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                    {{#each tags.property}}
-                                    <tr>
-                                        <td>{{name}}</td>
-                                        <td>
-                                            {{#each types}}
-                                            <code>{{.}}</code>
-                                            {{/each}}
-                                        </td>
-                                        <td>{{{markdown description}}}</td>
-                                        <td>
-                                            {{#if isOptional}}
-                                                <span class="tag tag-default">Optional</span>
-                                            {{/if}}
-                                        </td>
-                                    </tr>
-                                    {{/each}}
-                                    </tbody>
-
-                                </table>
-                            </div>
-
-                        </section>
-
-                        {{/if}}
-
                         {{#if tags.example.length}}
 
                         <section class="examples">
