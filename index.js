@@ -24,6 +24,16 @@ const plugin = data => new Promise((resolve, reject) => {
 
         }
 
+        data.files.filter(item => item.methods.length > 0).map(everyEach => 
+            {
+              everyEach.methods
+              .map((m1, index) => {
+                  console.log(m1);
+                /^__/.exec(m1.name) && delete everyEach.methods[index];
+              });
+            }
+        );
+                  
         const template = Handlebars.compile(contents);
 
         return resolve(template(data));
